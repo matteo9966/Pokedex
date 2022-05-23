@@ -1,0 +1,13 @@
+$gray-palette: (
+    600: #27292d,
+    500: #3f4447,
+    400: #717277,
+    300: #a9afb2,
+    200: #e6eaed,
+    100: #f6f8f9,
+);
+
+$gradient-gray:linear-gradient(42deg, rgba(73,71,70,1) 0%, rgba(178,180,179,1) 43%);
+$gradient-card-bg: linear-gradient(to top, #00e8c2, #00d4e8, #00bafb, #4c9af1, #9577ca);
+$gradient-navbar-bg:linear-gradient(356deg, rgba(126,63,251,1) 0%, rgba(38,219,193,0.8211659663865546) 50%, rgba(12,159,186,0.6138830532212884) 100%);
+$gradient-cream:linear-gradient(42deg, rgba(255,246,238,1) 0%, rgba(255,243,220,1) 43%);

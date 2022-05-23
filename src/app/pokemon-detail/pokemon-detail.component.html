@@ -1,0 +1,20 @@
+<div class="pokemon-detail">
+   <h3 class="pokemon-detail__name">Bulbasour</h3>
+   <div class="pokemon-detail__images">
+      <div class="pokemon-detail__images--image">
+          <img [src]="leftImage" >
+      </div>
+      <div class="pokemon-detail__images--image">
+          <img [src]="rightImage" >
+      </div>
+   </div>
+   <div class="pokemon-detail__stats">
+       <app-pokemon-detail-stats></app-pokemon-detail-stats>
+       <app-one-row-table [head]="'Type'" [rows]="['Acqua','fuoco','ghiaccio']"></app-one-row-table>
+       <app-one-row-table [head]="'Abilities'" [rows]="['Crescita','Duplicazione']"></app-one-row-table>
+   </div>
+   <div class="pokemon-detail__buttons-area">
+    <app-button [text]="'Previous'"></app-button>
+    <app-button [text]="'Next'"></app-button>
+   </div> 
+</div>

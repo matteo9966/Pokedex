@@ -1,0 +1,17 @@
+.pokemon-detail-type{
+    
+    min-width: 200px;
+    padding: 0 2rem;
+    border: 2px solid gray;
+    border-radius: 8px;
+
+    &--title{
+        font-size: 15px;
+    }
+
+    &__list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}

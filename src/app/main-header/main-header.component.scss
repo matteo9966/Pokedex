@@ -1,0 +1,19 @@
+@use '../styles/colors.scss' as c;
+.main-header {
+  width: 100vw;
+  height: 5vh;
+  background: c.$gradient-navbar-bg;
+  display: flex;
+  &__image {
+    height: 6.5vh;
+    width: 5vw;
+    padding: 0;
+    margin: 0;
+  }
+  &__title {
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+  }
+}

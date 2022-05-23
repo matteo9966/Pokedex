@@ -1,0 +1,38 @@
+@use '../styles/colors.scss' as colors;
+
+.pokemon-list-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0.5rem;
+    padding-top:1ch;
+    background: colors.$gradient-card-bg;
+    border-radius: 8px;
+    margin:0.6rem 0.3rem;
+
+    &__image{
+        width:200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(139, 139, 135, 0.726);
+        border-radius: 8px;
+        &>img{
+            width: 180px;
+            height: 180px;
+        }
+        
+    }
+
+    &__title{
+       text-align: left;
+       width: 100%;
+
+    }
+
+}
