@@ -1,18 +1,27 @@
+@use '../styles/colors.scss' as c;
+
+.detail-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 .pokemon-detail{
     margin: auto;
-    margin-top: 3vh;
+    margin-top: 13vh;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 60vw;
-    background-color:aquamarine;
+    background:c.$gradient-card-bg;
+    
 
 
     &__name{
         font-size: 2rem;
-        color: green;
+        color: rgb(36, 36, 36);
 
     }
     &__images{
@@ -22,20 +31,23 @@
         &--image{
             margin: 1rem;
 
+          
+
            &>img{
                height: 200px;
                width: 200px;
            }
+
         }
     }
 
     &__stats{
         display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    
 
     &>*{
         margin: 0 2vw;

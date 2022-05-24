@@ -1,14 +1,26 @@
-@use '../styles/colors.scss' as c;
+@use "../styles/colors.scss" as c;
 .main-header {
   width: 100vw;
-  height: 5vh;
-  background: c.$gradient-navbar-bg;
+  height: 7vh;
+  background: c.$gradient-card-bg;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   &__image {
     height: 6.5vh;
-    width: 5vw;
+    width: 6.5vw;
     padding: 0;
     margin: 0;
+    margin-left: 2vw;
+    & > img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__title {
     line-height: 2;

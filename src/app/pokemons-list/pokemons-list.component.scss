@@ -1,6 +1,20 @@
-.pokemon-list{
-    display: flex;
-    width: 80vw;
-    flex-wrap: wrap;
-    margin: auto;
+.list-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pokemon-list {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.carica-altri {
+  display: flex;
+  justify-content: center;
+  margin: 2.5vh 0;
 }

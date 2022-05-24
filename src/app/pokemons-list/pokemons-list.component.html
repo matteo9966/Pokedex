@@ -1,4 +1,20 @@
-<div class="pokemon-list">
-    <app-pokemon-list-card *ngFor="let pokemon of listOfPokemons" [name]="pokemon.name" [url]="pokemon.url"></app-pokemon-list-card>
- 
+<!-- <div class="pokemon-list" *ngFor="let pokemon of listOfPokemons">
+  <app-pokemon-list-card
+    *ngIf="getPokemonDetails(pokemon.url) | async as poke"
+    [name]="poke.name!"
+    [imageSrc]="poke.sprites!.front_default!"
+  ></app-pokemon-list-card> -->
+
+  <!-- <app-pokemon-list-card *ngFor="let pokemon of pokemonDetailsList" [name]="pokemon.name" [url]="pokemon.url" [details]="pokemon"></app-pokemon-list-card> -->
+<div class="list-container">
+  <div class="pokemon-list" >
+  
+    <app-pokemon-list-card *ngFor="let pokemon of pokemonDetailsList" [url]="pokemon.url" [name]="pokemon.name" [id]="''+pokemon.id"></app-pokemon-list-card>
+  
+  </div>
+    <div class="carica-altri">
+       <button (click)="loadNextPokemon()">Carica Altri</button>
+
+    </div>
+
 </div>
