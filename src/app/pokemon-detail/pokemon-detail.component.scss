@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 60vw;
+    width: 60vw;
     background:c.$gradient-card-bg;
     
 
@@ -50,7 +50,7 @@
     
 
     &>*{
-        margin: 0 2vw;
+        margin: 1vh 2vw;
     }
 
     }
@@ -62,4 +62,25 @@
         justify-content: space-evenly;
     }
 
+}
+
+@media screen and (max-width: 650px)  {
+
+    .pokemon-detail{
+        width: 90vw;
+    }
+
+    .pokemon-detail__images{
+        flex-direction: column;
+
+        &--image>img{
+            width: 110px;
+            height: 110px;
+        }
+    }
+
+    .pokemon-detail__stats{
+        flex-direction: column;
+        align-items: center;
+    }
 }

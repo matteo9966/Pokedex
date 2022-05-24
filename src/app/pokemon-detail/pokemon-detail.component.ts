@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { catchError, noop, switchMap } from 'rxjs';
 import { Type } from '../core/models/entries/GetPokemon/GetPokemonResponse';
 import { RestApiService } from '../services/rest-api.service';
 @Component({
@@ -41,6 +41,10 @@ export class PokemonDetailComponent implements OnInit {
     const details$ = this.route.paramMap.pipe(
       switchMap((param: ParamMap) => {
         const id = param.get('id')!;
+
+     //COSA FACCIO SE AVVIENE UN ERROERE?
+
+     
         return this.rest.getPokemonDetail(
           ' https://pokeapi.co/api/v2/pokemon/' + id
         );
@@ -70,7 +74,7 @@ export class PokemonDetailComponent implements OnInit {
 
   goToNextPoke(id:number){
     console.log({"ID:":id})
-    if(id<0||id>151) return 
+    if(id<=0||id>151) return 
     this.router.navigate([""+id]);
   }
 
