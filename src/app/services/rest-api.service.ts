@@ -64,7 +64,7 @@ export class RestApiService {
     return this.http
       .get<GetPokemonsResponse>(baseURL,{params})
       .pipe(pluck('results'))
-      .pipe(tap((data) => console.log(data)))
+      
       .pipe(catchError(this.handleError));
   }
 
@@ -77,7 +77,7 @@ export class RestApiService {
   getPokemonDetail(url: string):Observable<GetPokemonResponse> {
     return this.http
       .get<GetPokemonResponse>(url)
-      .pipe(tap((data) => console.log(data)))
+    
       .pipe(catchError(this.handleError));
   }
 

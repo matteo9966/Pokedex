@@ -19,7 +19,7 @@ export class PokemonsListComponent implements OnInit,OnDestroy {
   pokemonDetailsList:PokemonCardInterface[]=[];
   
   ngOnDestroy(): void {
-    console.log("la pagina viene distrutta!")
+    
   }
 
   ngOnInit(): void {

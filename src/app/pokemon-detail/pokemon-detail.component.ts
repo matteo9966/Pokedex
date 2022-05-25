@@ -73,7 +73,7 @@ export class PokemonDetailComponent implements OnInit {
   }
 
   goToNextPoke(id:number){
-    console.log({"ID:":id})
+ 
     if(id<=0||id>151) return 
     this.router.navigate([""+id]);
   }
