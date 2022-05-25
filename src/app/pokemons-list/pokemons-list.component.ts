@@ -45,6 +45,10 @@ export class PokemonsListComponent implements OnInit,OnDestroy {
     this.getPokemonsForList(); //concatena altri pokemon
   }
 
+  searchPokemon(){
+    
+  }
+
   // getPokemonsWithDetails(){
   //   this.rest.getPokemons(this.offset,this.limit).pipe(switchMap(data=>{
 
